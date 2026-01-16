@@ -4,8 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--tertiary);
+    color: var(--secondary);
+    padding: 1rem;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
 :root {
- 
+  
+  --primary: #ce1879;
+  --secondary: #e6e2e2;
+  --tertiary: #252527;
+
+  --title: clamp(1.8rem, calc(7vw + 1rem), 5rem);
+  --subtitle: clamp(1.6rem, 2.2vw, 2.15rem);
+  --text: clamp(1.1rem, 1.1vw, 1.4rem);
+
   --font-laybar: 'Laybar', system-ui, sans-serif;
   --font-ophium: 'OphiumDemo', serif;
   --font-sketsa: 'SketsaHanddrawn', cursive;
@@ -34,3 +49,10 @@
 }
 
 
+#title {
+  white-space: nowrap;
+  width: 100%;
+  font-size: var(--title);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
