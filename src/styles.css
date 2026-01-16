@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+ 
+  --font-laybar: 'Laybar', system-ui, sans-serif;
+  --font-ophium: 'OphiumDemo', serif;
+  --font-sketsa: 'SketsaHanddrawn', cursive;
+  --font-demonstars: 'DemonStars', cursive;
+}
+
+@font-face {
+  font-family: 'DemonStars';
+  src: url('/assets/fonts/DemonStars/Demonstars-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OphiumDemo';
+  src: url('/assets/fonts/OphiumDemo/Ophium Font Demo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SketsaHanddrawn';
+  src: url('/assets/fonts/SketsaHanddrawn/SketsaHanddrawn-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Laybar';
+  src: url('/assets/fonts/Laybar/LAYBAR.ttf') format('truetype'),
+       url('/assets/fonts/Laybar/LAYBAR.otf') format('opentype');
+}
+
+
