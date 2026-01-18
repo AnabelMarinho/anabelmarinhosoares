@@ -9,6 +9,7 @@ body {
     color: var(--secondary);
     padding: 1rem;
     font-family: system-ui, -apple-system, sans-serif;
+    font-size: var(--text);
 }
 
 :root {
@@ -17,9 +18,9 @@ body {
   --secondary: #e6e2e2;
   --tertiary: #252527;
 
-  --title: clamp(1.0rem, 5.2vw, 8.15rem);
-  --subtitle: clamp(1.0rem, 2.2vw, 2.15rem);
-  --text: clamp(1.1rem, 1.1vw, 1.4rem);
+  --title: clamp(1.0rem, 8.2vw, 10.15rem);
+  --subtitle: clamp(1.2rem, 3.0vw, 4.0rem);
+  --text: clamp(1.1rem, 2.1vw, 2.5rem);
 
   --font-laybar: 'Laybar', system-ui, sans-serif;
   --font-ophium: 'OphiumDemo', serif;
@@ -62,7 +63,21 @@ body {
     height: 3.5rem;
 }
 
+
+#star-decorative-mini {
+    width: 1.5rem;
+    height: 2.5rem;
+}
+
 #logo-anabel {
     width: 5rem;
     height: 5rem;
+}
+
+@media (max-width: 900px) {
+  #star-decorative {
+    width: 1.5rem;
+    height: 2.5rem;
+}
+
 }

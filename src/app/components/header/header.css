@@ -14,6 +14,7 @@ header {
     font-family: var(--font-mosca);
     text-decoration: underline;
     width: 92%;
+    transition: color 0.3s ease;
 
     background-color: var(--primary);
     padding: 0.5rem 1rem;
@@ -25,8 +26,12 @@ header {
     gap: 0.5rem;
 }
 
+.header-contact-bar:hover {
+    cursor: pointer;
+    color: var(--secondary);
+}
+
 .phone-icon {
     width: clamp(1.0rem, 2.2vw, 2.15rem);
     height: clamp(1.0rem, 2.2vw, 2.15rem);
-    stroke: var(--tertiary);
 }

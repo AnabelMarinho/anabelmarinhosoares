@@ -1,0 +1,39 @@
+.education-container {
+    margin-top: 1rem;
+
+    .title {
+        font-size: var(--subtitle);
+        font-family: var(--font-laybar);
+        color: var(--primary);
+    }
+}
+
+.education-card {
+    display: flex;
+    width: 100%;
+}
+
+.education-content {
+    width: 90%;
+    padding: 1rem;
+    border: solid 4px var(--primary);
+
+    .text {
+        font-family: var(--font-sketsa);
+    }
+}
+
+.img-content {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 1rem;
+}
+
+@media (max-width: 480px) {
+.img-content {
+    width: 50%;
+}
+}
