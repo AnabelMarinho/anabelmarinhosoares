@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-contact-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--tertiary);
+    font-size: var(--subtitle);
+    font-family: var(--font-mosca);
+    text-decoration: underline;
+    width: 92%;
+
+    background-color: var(--primary);
+    padding: 0.5rem 1rem;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.phone-icon {
+    width: clamp(1.0rem, 2.2vw, 2.15rem);
+    height: clamp(1.0rem, 2.2vw, 2.15rem);
+    stroke: var(--tertiary);
+}

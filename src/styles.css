@@ -17,19 +17,14 @@ body {
   --secondary: #e6e2e2;
   --tertiary: #252527;
 
-  --title: clamp(1.8rem, calc(7vw + 1rem), 5rem);
-  --subtitle: clamp(1.6rem, 2.2vw, 2.15rem);
+  --title: clamp(1.0rem, 5.2vw, 8.15rem);
+  --subtitle: clamp(1.0rem, 2.2vw, 2.15rem);
   --text: clamp(1.1rem, 1.1vw, 1.4rem);
 
   --font-laybar: 'Laybar', system-ui, sans-serif;
   --font-ophium: 'OphiumDemo', serif;
   --font-sketsa: 'SketsaHanddrawn', cursive;
-  --font-demonstars: 'DemonStars', cursive;
-}
-
-@font-face {
-  font-family: 'DemonStars';
-  src: url('/assets/fonts/DemonStars/Demonstars-Regular.ttf') format('truetype');
+  --font-mosca: 'Mosca', sans-serif;
 }
 
 @font-face {
@@ -48,6 +43,11 @@ body {
        url('/assets/fonts/Laybar/LAYBAR.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Mosca';
+  src: url('/assets/fonts/MoscaLaroke/Mosca Laroke.otf') format('truetype'),
+       url('/assets/fonts/MoscaLaroke/Mosca Laroke.ttf') format('opentype');
+}
 
 #title {
   white-space: nowrap;
@@ -55,4 +55,14 @@ body {
   font-size: var(--title);
   line-height: 1;
   letter-spacing: -0.04em;
+}
+
+#star-decorative {
+    width: 2.5rem;
+    height: 3.5rem;
+}
+
+#logo-anabel {
+    width: 5rem;
+    height: 5rem;
 }

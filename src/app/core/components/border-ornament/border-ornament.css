@@ -1,0 +1,24 @@
+.border-ornament-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--primary);
+    font-size: var(--text);
+}
+
+.border-ornament {
+    width: 60%;
+    height: 5px;
+    background: var(--primary);
+}
+
+.border-ornament-container.vertical {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.border-ornament-container.vertical .border-ornament {
+    width: 5px;
+    height: 60%;
+}

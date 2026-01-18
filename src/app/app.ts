@@ -1,8 +1,11 @@
 import { Component, signal } from '@angular/core';
+import { Header } from './components/header/header';
+import { BorderOrnament } from './core/components/border-ornament/border-ornament';
+import { ProfileSection } from './components/profile-section/profile-section';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [Header, BorderOrnament, ProfileSection],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
 })
