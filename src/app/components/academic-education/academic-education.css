@@ -32,8 +32,12 @@
     padding: 1rem;
 }
 
+.img-content img {
+    width: 3rem;
+}
+
 @media (max-width: 480px) {
 .img-content {
-    width: 50%;
+    width: 20%;
 }
 }

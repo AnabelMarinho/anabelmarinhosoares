@@ -122,11 +122,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .tech-title {
     font-size: var(--subtitle);
     font-family: var(--font-ophium);
+    white-space: nowrap;
+
 }
 
 .tech-card {

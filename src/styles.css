@@ -19,7 +19,7 @@ body {
   --tertiary: #252527;
 
   --title: clamp(1.0rem, 8.2vw, 10.15rem);
-  --subtitle: clamp(1.2rem, 3.0vw, 4.0rem);
+  --subtitle: clamp(1.0rem, 3.0vw, 4.0rem);
   --text: clamp(1.1rem, 2.1vw, 2.5rem);
 
   --font-laybar: 'Laybar', system-ui, sans-serif;
