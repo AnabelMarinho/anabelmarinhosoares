@@ -4,10 +4,11 @@ import { BorderOrnament } from './core/components/border-ornament/border-ornamen
 import { ProfileSection } from './components/profile-section/profile-section';
 import { AcademicEducation } from './components/academic-education/academic-education';
 import { Projects } from './components/projects/projects';
+import { Footer } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, BorderOrnament, ProfileSection, AcademicEducation, Projects],
+  imports: [Header, BorderOrnament, ProfileSection, AcademicEducation, Projects, Footer],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
 })
