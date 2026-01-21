@@ -1,1 +1,23 @@
-<p>card works!</p>
+<div class="card-container">
+  <div class="card-top">
+    <p class="title-card">{{ title }}</p>
+    <img [src]="image" [alt]="title" />
+  </div>
+
+  <div class="card-bottom">
+    <p class="text-card"
+    [class.expanded]="expanded"
+    (click)="toggleExpanded()">{{ text }}</p>
+
+    <div class="tags"><span class="tag" *ngFor="let tag of tags">{{ tag }}</span></div>
+  </div>
+
+  <div class="card-footer">
+    <div class="card-footer-link-container">
+        <span class="card-footer-text">Acessar</span>
+        <svg class="card-footer-link" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+        </svg>
+    </div>
+  </div>
+</div>

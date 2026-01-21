@@ -5,6 +5,7 @@
     grid-template-columns: 70% 30%;
     gap: 1rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 /* LEFT COLUMN */
@@ -13,6 +14,8 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     height: 100%;
+    width: 100%;
+    min-width: 0;
 }
 
 #title {
@@ -24,12 +27,11 @@
     letter-spacing: -0.04em;
 }
 
-
 .block-content {
-    display: flex;        /* ← NÃO inline-flex */
+    display: flex;        
     flex-direction: column;
     align-items: stretch;
-    width: 100%;          /* ← trava no grid */
+    width: 100%;          
     max-width: 100%;
 }
 
@@ -73,14 +75,19 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    min-width: 0;
+    flex: 1;
 }
 
 /* CONTACT */
 
 .contact {
     display: flex;
-    width: 20%;
+    width: auto;
+    min-width: fit-content;
 }
+
 .contact ul {
     display: flex;
     justify-content: space-around;
@@ -88,6 +95,7 @@
     padding: 1rem;
     border: solid 4px var(--primary);
     border-top-right-radius: 2rem;
+    border-left: transparent;
 
     transform: rotate(180deg);
     writing-mode: vertical-rl;
@@ -123,13 +131,14 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    min-width: 0;
+    flex: 1;
 }
 
 .tech-title {
     font-size: var(--subtitle);
     font-family: var(--font-ophium);
     white-space: nowrap;
-
 }
 
 .tech-card {
@@ -138,6 +147,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
     
     p {
         font-family: var(--font-laybar);
@@ -174,6 +184,35 @@
     background-color: var(--primary);
 }
 
+.tech-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tech-list p {
+    background-color: var(--primary);
+    color: var(--tertiary);
+    font-family: var(--font-laybar);
+    font-size: var(--subtitle);
+}
+
+.tech-list span {
+    font-family: var(--font-sketsa);
+    margin-bottom: 4rem;
+}
+
+.tech-list .img-star {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.border-ornament-wrapper {
+    height: 100%;
+    display: flex;
+}
 
 /* RIGHT COLUMN */
 
@@ -183,6 +222,13 @@
     align-items: stretch;
     gap: 1rem;
     padding-left: 1rem;
+    width: 100%;
+    min-width: 0;
+}
+
+.block3 {
+    position: relative;
+    width: 100%;
 }
 
 .right-column::before {
@@ -209,6 +255,7 @@
     border: solid 4px var(--primary);
     padding: 1rem;
     font-family: var(--font-sketsa);
+    width: 100%;
 }
 
 .card-img-right {
@@ -218,6 +265,7 @@
     border-bottom-right-radius: 4rem;
     line-height: 0;
     overflow: hidden;
+    width: 100%;
 }
 
 .card-img-right .filter {
@@ -233,53 +281,44 @@
     aspect-ratio: 1 / 1;
 }
 
-.tech-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.tech-list p {
-    background-color: var(--primary);
-    color: var(--tertiary);
-    font-family: var(--font-laybar);
-    font-size: var(--subtitle);
-}
-
-.tech-list span {
-    font-family: var(--font-sketsa);
-    margin-bottom: 4rem;
-}
-
-.block3 {
-    position: relative;
-}
-
-.tech-list .img-star {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-.border-ornament-wrapper {
-    height: 100%;
-    display: flex;
-}
+/* RESPONSIVE */
 
 @media (max-width: 900px) {
     .content-section {
         grid-template-columns: 1fr;
     }
 
-    .right-column::after {
-        width: 6rem;
+    .right-column {
+        padding-left: 0;
     }
+
+    .right-column::before {
+        height: 2rem;
+    }
+    
 }
 
 @media (max-width: 480px) {
+    .content-section {
+        grid-template-columns: 1fr;
+    }
+
+    .block2 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
     .contact ul {
         border: none;
+        justify-content: space-between;
+        writing-mode: horizontal-tb;
+        transform: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+        a img {
+            transform: rotate(90deg);
+        }
     }
 
     .methodologies {

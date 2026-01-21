@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './card.html',
   styleUrl: './card.css',
 })
 export class Card {
+@Input() title!: string;
+@Input() text!: string;
+@Input() image!: string;
+@Input() tags: string[] = [];
 
+expanded = false;
+toggleExpanded()  {
+  this.expanded = !this.expanded;
+}
 }

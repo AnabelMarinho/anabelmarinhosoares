@@ -46,8 +46,20 @@
     }
 }
 
+.projects {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: stretch;
+}
+
 @media (max-width: 480px) {
 .projects-name-bar {
     gap: 0.5rem;
 }
+
+.projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
