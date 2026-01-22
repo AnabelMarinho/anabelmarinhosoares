@@ -3,7 +3,7 @@ import { Contact } from '../../core/components/contact/contact';
 
 @Component({
   selector: 'app-footer',
-  imports: [Contact],
+  imports: [],
   templateUrl: './footer.html',
   styleUrl: './footer.css',
 })

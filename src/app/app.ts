@@ -5,10 +5,11 @@ import { ProfileSection } from './components/profile-section/profile-section';
 import { AcademicEducation } from './components/academic-education/academic-education';
 import { Projects } from './components/projects/projects';
 import { Footer } from './components/footer/footer';
+import { TechStackBar } from './components/tech-stack-bar/tech-stack-bar';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, BorderOrnament, ProfileSection, AcademicEducation, Projects, Footer],
+  imports: [Header, BorderOrnament, ProfileSection, AcademicEducation, Projects, TechStackBar, Footer],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
 })
