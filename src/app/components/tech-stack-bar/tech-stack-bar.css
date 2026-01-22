@@ -41,9 +41,18 @@
 }
 
 .icon-bar {
-  width: 32px;
-  height: 32px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary);
+}
+
+.icon-bar img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
 
 .soft-skills {
