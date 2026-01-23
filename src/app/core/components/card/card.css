@@ -84,8 +84,6 @@ img {
 
   padding: 0.35rem 0.75rem;
   border-radius: 999px;
-
-  background-color: transparent;
   color: var(--secondary);
 
   cursor: pointer;

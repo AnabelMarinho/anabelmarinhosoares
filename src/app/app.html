@@ -1,9 +1,9 @@
-<main>
-    <app-header></app-header>
-    <app-border-ornament></app-border-ornament>
-    <app-profile-section></app-profile-section>
-    <app-academic-education></app-academic-education>
-    <app-projects></app-projects>
-    <app-tech-stack-bar></app-tech-stack-bar>
-    <app-footer></app-footer>
-</main>
+<div class="app-layout">
+  <app-header></app-header>
+
+  <main class="app-content">
+    <router-outlet></router-outlet>
+  </main>
+
+  <app-footer></app-footer>
+</div>

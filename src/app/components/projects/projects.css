@@ -54,6 +54,11 @@
   align-items: stretch;
 }
 
+.border-ornament-wrapper {
+    height: 100%;
+    display: flex;
+}
+
 @media (max-width: 480px) {
 .projects-name-bar {
     gap: 0.5rem;

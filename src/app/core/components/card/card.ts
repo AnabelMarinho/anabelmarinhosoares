@@ -11,6 +11,7 @@ export class Card {
 @Input() title!: string;
 @Input() text!: string;
 @Input() image!: string;
+@Input() link!: string;
 @Input() tags: string[] = [];
 
 expanded = false;

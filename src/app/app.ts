@@ -6,10 +6,11 @@ import { AcademicEducation } from './components/academic-education/academic-educ
 import { Projects } from './components/projects/projects';
 import { Footer } from './components/footer/footer';
 import { TechStackBar } from './components/tech-stack-bar/tech-stack-bar';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, BorderOrnament, ProfileSection, AcademicEducation, Projects, TechStackBar, Footer],
+  imports: [Header, BorderOrnament, ProfileSection, AcademicEducation, Projects, TechStackBar, Footer, RouterOutlet],
   templateUrl: './app.html',
   styleUrls: ['./app.css'],
 })
